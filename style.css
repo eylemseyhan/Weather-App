@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+* {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* <400> yerine doğru bir değer kullanın */
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    
+}
+.app-name {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, .1);
+    transition: transform 0.5s ease-in-out;
+
+}
+.app-name:hover {
+    transform: scale(1.1); /* Hover olduğunda büyüme efekti */
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 20px;
+    border-radius: 16px;
+    width: 400px;
+    height: 555px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, .1);
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Soldan ve sağdan 10px padding */
+    box-sizing: border-box;
+}
+
+.search-box input {
+    flex-grow: 1; /* Alanı doldurması için */
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 10px 0 42px; /* Sol padding'i icon için, sağ padding'i buton için */
+    box-sizing: border-box;
+}
+
+.search-box input::placeholder {
+    color: rgba(255, 255, 255, .5);
+    text-transform: capitalize;
+}
+
+.search-box button {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out; /* Daha uzun süre ve yumuşak geçiş efekti */
+}
+
+.search-box button:hover {
+    transform: scale(1.2); /* Hover olduğunda büyüme efekti */
+}
+
+.search-box i {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    left: 20px; /* İconun sol padding'i */
+}
+
+.weather-box,
+.weather-details,
+.not-found {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.weather-box.fadeIn,
+.weather-details.fadeIn,
+.not-found.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.weather-box {
+    text-align: center;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Kalan alanı doldurması için */
+    width: 100%;
+}
+
+.weather-box img {
+    width: 60%;
+}
+
+.temperature {
+    font-size: 48px;
+    margin: 10px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+.temperature span {
+    font-size: 48px;
+    margin: 10px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 24px;
+}
+
+.weather-details {
+    position:absolute;
+    bottom: 25px;
+    left: -20px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+
+.weather-details .humidity,
+.weather-details .wind {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+}
+.weather-details i {
+
+    
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+.weather-details p {
+    font-size: 14px;
+    margin: 0;
+}
+.footer {
+    margin-top: 20px;
+    color: #fff;
+}
+.not-found img {
+    width: 60%;
+}
+.not-found {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
