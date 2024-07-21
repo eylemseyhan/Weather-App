@@ -3,9 +3,14 @@
 Bu proje, HTML, CSS ve JavaScript kullanılarak oluşturulmuş bir hava durumu uygulamasıdır. OpenWeatherAPI kullanılarak hava durumu verileri alınmaktadır. Kullanıcılar, şehir adını girerek anlık hava durumu bilgilerini görüntüleyebilirler.
 
 ## Görüntüler
-![Ekran görüntüsü 2024-07-10 015516](https://github.com/eylemseyhan/Weather-App/assets/99998017/991dab4a-bf59-49ce-b263-82bf09a66854)
 
-![Ekran görüntüsü 2024-07-10 015557](https://github.com/eylemseyhan/Weather-App/assets/99998017/0ab5d781-4e19-4ea3-9f2f-5e1d7913d1de)
+![Ekran görüntüsü 2024-07-21 181211](https://github.com/user-attachments/assets/395cbec6-6256-4b13-8fff-3f4d838dce55)
+
+![Ekran görüntüsü 2024-07-21 181332](https://github.com/user-attachments/assets/61ad781f-6294-41e5-905c-79f79de0e8dc)
+
+
+![Ekran görüntüsü 2024-07-21 181225](https://github.com/user-attachments/assets/304ef0c3-7a32-4ca6-aa02-b61ef49944fe)
+
 
 
 
