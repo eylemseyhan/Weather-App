@@ -1,8 +1,7 @@
-# Hava Durumu Uygulaması
+# Weather App
 
-Bu proje, HTML, CSS ve JavaScript kullanılarak oluşturulmuş bir hava durumu uygulamasıdır. OpenWeatherAPI kullanılarak hava durumu verileri alınmaktadır. Kullanıcılar, şehir adını girerek anlık hava durumu bilgilerini görüntüleyebilirler.
-
-## Görüntüler
+This project is a weather application built using HTML, CSS, and JavaScript. It fetches weather data using the OpenWeatherAPI. Users can view real-time weather information by entering the name of a city.
+## Screenshots
 
 ![Ekran görüntüsü 2024-07-21 181211](https://github.com/user-attachments/assets/395cbec6-6256-4b13-8fff-3f4d838dce55)
 
@@ -14,42 +13,41 @@ Bu proje, HTML, CSS ve JavaScript kullanılarak oluşturulmuş bir hava durumu u
 
 
 
-## Proje Özellikleri
+## Project Features
 
-- Kullanıcı dostu arayüz
-- Anlık hava durumu bilgileri (sıcaklık, hava durumu açıklaması, nem oranı, rüzgar hızı)
-- Türkçe dil desteği
-- Şık ve modern tasarım
+User-friendly interface
+Real-time weather information (temperature, weather description, humidity, wind speed)
+Turkish language support
+Stylish and modern design
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
 - [OpenWeatherAPI](https://openweathermap.org/)
 
-## Kurulum ve Kullanım
+## Installation and Usage
 
-1. Bu projeyi klonlayın veya indirin:
+1. Clone or download this project:
     ```sh
     git clone https://github.com/YOUR_GITHUB_USERNAME/weather-js-app.git
     cd weather-js-app
     ```
 
-2. Gerekli dosyaların yüklü olduğundan emin olun:
+2.  Ensure that the necessary files are installed:
+
+
     ```sh
     npm install
     ```
 
-3. OpenWeatherAPI anahtarınızı alın:
-    - OpenWeatherAPI'ye kayıt olun ve bir API anahtarı alın: https://openweathermap.org/api
+3. Get your OpenWeatherAPI key:
+    
 
-4. `script.js` dosyasındaki `APIKey` değişkenini kendi API anahtarınızla değiştirin:
-    ```javascript
-    const APIKey = "YOUR_API_KEY";
-    ```
+4. Replace the APIKey variable in the script.js file with your own API key
 
-5. Projeyi yerel sunucunuzda çalıştırın veya bir tarayıcıda `index.html` dosyasını açın.
+5. Run the project on your local server or open the index.html file in a browser.
 
 
 
